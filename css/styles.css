@@ -106,17 +106,24 @@ a {
 .Art h2:hover{
      text-shadow: 2px 0 9px #3f24ff;
 }
+.container{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit , 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
 /*img size*/
 .images img {
-     width: 50%;
-    height: auto;
+    max-width: 100%;
+    object-fit: cover;
 }
 
-.images div {
-    display: flex;
-    flex-wrap: wrap;
+/*.images div {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
 
-}
+/*}*/
 /*code part*/
 .Codes h2 {
     color: #9d4edd;
